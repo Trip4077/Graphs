@@ -16,6 +16,10 @@ class Queue():
 class Stack():
     def __init__(self):
         self.stack = []
+
+    def __str__(self):
+        return ' '.join([ str(node) for node in self.stack ])
+
     def push(self, value):
         self.stack.append(value)
     def pop(self):
